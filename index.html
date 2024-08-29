@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>রিয়ার বিভিন্ন পরিস্থিতি</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: auto;
+            border: 2px solid #000; /* Outer border for the entire table */
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #000; /* Border for each cell */
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .status {
+            text-align: center;
+            width: 50px;
+        }
+        .status img {
+            width: 20px;
+            height: 20px;
+        }
+        @media screen and (max-width: 600px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+            th, td {
+                padding: 10px;
+                text-align: left;
+            }
+            tr {
+                margin-bottom: 10px;
+            }
+            th {
+                background-color: #f2f2f2;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h2>রিয়ার বিভিন্ন পরিস্থিতি</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th class="status">অবস্থা</th>
+                <th>তারিখ</th>
+                <th>বিষয়</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="status"><img src="https://img.icons8.com/color/48/000000/checked.png" alt="Green Tick"></td>
+                <td>29 Aug, 2024</td>
+                <td>প্রথম মন খারাপ এবং কান্না</td>
+            </tr>
+            <tr>
+                <!-- <td class="status"><img src="https://img.icons8.com/color/48/000000/cancel.png" alt="Red Cross"></td> -->
+                <td>মুলতুবি</td>
+                <td>1 Sep, 2024</td>
+                <td>এই রবিবার দেখা করতেই হবে</td>
+            </tr>
+            <!-- <tr>
+                <td class="status"><img src="https://img.icons8.com/color/48/000000/checked.png" alt="Green Tick"></td>
+                <td>2024-08-27</td>
+                <td>Code Review</td>
+            </tr> -->
+        </tbody>
+    </table>
+
+</body>
+</html>

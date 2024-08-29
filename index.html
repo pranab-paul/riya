@@ -45,9 +45,37 @@
                 padding: 8px; /* Reduce padding for smaller screens */
             }
         }
+
+
+
+        .slideshow-container {
+            width: 500px; /* Resize image container */
+            height: 200px; /* Resize image container */
+            overflow: hidden;
+        }
+        .slideshow img {
+            width: auto;
+            height: 2%;
+        }
+
+
     </style>
 </head>
 <body>
+
+
+
+    <div class="slideshow-container">
+        <marquee behavior="scroll" direction="left">
+            <img src="1.1.jpg" alt="Image 1">
+            <img src="4.1.jpg" alt="Image 3">
+            <img src="2.1.jpg" alt="Image 2">
+            <img src="3.1.jpg" alt="Image 3">
+            <img src="5.1.jpeg" alt="Image 3">
+        </marquee>
+    </div>
+
+
 
     <h2>রিয়ার ডাইরি</h2>
 
@@ -101,5 +129,4 @@
 
 </body>
 </html>
-
 

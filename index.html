@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>রিয়ার বিভিন্ন পরিস্থিতি</title>
+    <title>রিয়া</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -12,13 +12,13 @@
         table {
             width: 100%;
             border-collapse: collapse;
-            table-layout: auto;
             border: 2px solid #000; /* Outer border for the entire table */
         }
         th, td {
             padding: 12px;
             text-align: left;
             border: 1px solid #000; /* Border for each cell */
+            word-wrap: break-word; /* Ensures content wraps within the cell */
         }
         th {
             background-color: #f2f2f2;
@@ -27,36 +27,35 @@
             text-align: center;
             width: 50px;
         }
+        .date {
+            text-align: center;
+            width: 95px;
+        }
         .status img {
             width: 20px;
             height: 20px;
         }
+        /* Make the table responsive without breaking the table structure */
         @media screen and (max-width: 600px) {
-            table, thead, tbody, th, td, tr {
-                display: block;
+            table {
+                width: 100%;
+                font-size: 14px; /* Reduce font size for smaller screens */
             }
             th, td {
-                padding: 10px;
-                text-align: left;
-            }
-            tr {
-                margin-bottom: 10px;
-            }
-            th {
-                background-color: #f2f2f2;
+                padding: 8px; /* Reduce padding for smaller screens */
             }
         }
     </style>
 </head>
 <body>
 
-    <h2>রিয়ার বিভিন্ন পরিস্থিতি</h2>
+    <h2>রিয়ার পরিস্থিতি</h2>
 
     <table>
         <thead>
             <tr>
                 <th class="status">অবস্থা</th>
-                <th>তারিখ</th>
+                <th class="date">তারিখ</th>
                 <th>বিষয়</th>
             </tr>
         </thead>
@@ -82,3 +81,5 @@
 
 </body>
 </html>
+
+
